@@ -1,0 +1,42 @@
+.titlebox{
+    width: 100%;
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+
+    .title{
+        position: absolute;
+        top: 70%;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        font-size: 3rem;
+        color: #fff;
+
+        @media screen and (max-width: 664px) {
+            font-size: 2.5rem;
+            top: 75%;
+        }
+
+        @media screen and (max-width: 450px) {
+            font-size: 2rem;
+            top: 75%;
+            left: 4vw;
+            right: 4vw;
+            text-align: center;
+        }
+
+        span{
+            background: linear-gradient(to right, #0A6FA7, #000);
+            width: max-content;
+            padding: 0.5vw 2vw;
+            border-radius: 10px;
+            border: 2px solid #fff;
+        }
+    }
+
+}

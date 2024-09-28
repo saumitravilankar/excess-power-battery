@@ -1,0 +1,131 @@
+.container{
+    margin: 10vh 10vw;
+    color: white;
+
+    .ImgContainer{
+        position: relative;
+        height: 700px;
+
+        @media screen and (max-width: 826px) {
+            height: 490px;
+        }
+        @media screen and (max-width: 600px) {
+            height: 350px;
+        }
+        @media screen and (max-width: 450px) {
+            height: 290px;
+        }
+        @media screen and (max-width: 320px) {
+            height: 200px;
+        }
+    }
+
+    .title{
+        font-size: 3rem;
+        margin: 6vh 0 3vh 0;
+
+        @media screen and (max-width: 450px) {
+            font-size: 2rem;
+            text-align: center;
+        }
+    }
+
+    .info{
+        font-size: 20px;
+
+        @media screen and (max-width: 450px) {
+            text-align: center;
+        }
+    }
+
+    .table{
+        border: 2px solid #fff;
+        margin: 8vh 0;
+        overflow: hidden;
+
+        .borderDiv{
+            border: 2px solid #fff;
+            margin: 4px;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            position: relative;
+            
+            .col{
+                text-align: center;
+                height: 100%;
+                border-right: 1px solid #bbb;
+                flex: 1;
+                justify-content: space-evenly;
+
+                .row{
+                    flex: 1;
+                }
+
+                .heading{
+                    font-size: 17px;
+                    border-bottom: 1px solid #bbb;
+                    padding: 15px 5px;
+                    height: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-weight: 600;
+                    color: #0A6FA7;
+                }
+
+                .information{
+                    padding: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 50%;
+                    border-bottom: 1px solid #bbb;
+                }
+
+                @media screen and (max-width: 871px) {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .heading{
+                        height: 100%;
+                        border-right: 1px solid #bbb;
+                    }
+
+                    .information{
+                        height: 100%;
+                    }
+                }
+
+                @media screen and (max-width: 450px) {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    .heading{
+                        height: 100%;
+                        width: 100%;
+                    }
+
+                    .information{
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+
+            @media screen and (max-width: 871px) {
+                grid-template-columns: auto;
+            }
+        }
+
+
+        button{
+            padding: 10px 20px;
+            margin: 2vh 0;
+            border-radius: 40px;
+            background-color: #0A6FA7;
+        }
+    }
+}

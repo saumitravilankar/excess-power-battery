@@ -1,0 +1,109 @@
+.container{
+    width: 100%;
+
+    img{
+        width: 100%;
+    }
+
+    .title{
+        text-align: center;
+        color: #fff;
+        font-size: 2.6rem;
+        padding: 30px 8vw 0 8vw;
+
+        @media screen and (max-width: 501px) {
+            font-size: 2.2rem;
+            padding: 30px 3vw 0 3vw;
+            font-weight: 500;
+        }
+
+        @media screen and (max-width: 412px) {
+            font-size: 2rem;
+            padding: 30px 3vw 0 3vw;
+            font-weight: 500;
+        }
+    }
+
+    .tagline{
+        text-align: center;
+        color: #fff;
+        font-size: 1.5rem;
+        padding: 30px 0 0 0;
+
+        @media screen and (max-width: 1024px) {
+            padding: 20px 5vw 10px 5vw;
+        }
+
+        @media screen and (max-width: 700px) {
+            font-size: 1.3rem;
+            padding: 30px 10vw 0 10vw;
+            font-weight: 400;
+        }
+
+        @media screen and (max-width: 501px) {
+            font-size: 1rem;
+            padding: 30px 10vw 0 10vw;
+            font-weight: 400;
+        }
+       
+    }
+
+    .faqSection{
+        font-size: 20px;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: start;
+        margin: 5vh 0;
+
+        .question{
+            width: 70%;
+            padding: 20px;
+            background: #fff;
+            color: black;
+            font-size: 17px;
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            font-weight: 500;
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+            margin: 10px 0;
+
+            .icon{
+                font-size: 1.2rem;
+                color: #fff;
+            }
+
+            &:hover{
+                background-color: rgb(39, 39, 39);
+                color: white;
+            }
+        }
+
+        .answer{
+            width: 70%;
+            padding: 20px;
+            color: #fff;
+            font-size: 17px;
+            font-weight: 500;
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+            margin: 10px 0;
+        }
+
+        @media screen and (max-width: 700px) {
+            .question{
+                width: 80%;
+            }
+
+            .answer{
+                width: 80%;
+            }
+        }
+
+    }
+}

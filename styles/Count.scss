@@ -1,0 +1,46 @@
+.countbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10vh 10vw;
+
+    .container{
+        border: 2px solid #0F61A9;
+        display: flex;
+        justify-content: space-around;
+        padding: 50px 0;
+        text-align: flex-start;
+        color: white;
+
+        .icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .count{
+            font-size: 3rem;
+            font-weight: 600;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @media screen and (max-width: 800px) {
+                font-size: 2rem;
+            }
+        }
+
+        .text{
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media screen and (max-width: 600px ) {
+            flex-direction: column;
+            gap: 40px;
+        }
+    }
+
+}

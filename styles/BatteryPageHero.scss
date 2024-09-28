@@ -1,0 +1,111 @@
+.batteryherobox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    margin: 13vh 10vw 10vh 10vw;
+    gap: 5vw;
+
+    .image-div{
+        height: 500px;
+
+        @media screen and (max-width: 826px) {
+            height: 490px;
+        }
+
+        @media screen and (max-width: 600px) {
+            height: 350px;
+        }
+        @media screen and (max-width: 450px) {
+            height: 290px;
+        }
+        @media screen and (max-width: 320px) {
+            height: 200px;
+        }
+
+        img{
+            transition: all 1s;
+    
+            &:hover{
+                scale: 1.1;
+                border: 4px solid #0A6FA7;
+                padding: 5px;
+            }
+        }
+    }
+
+    .table{
+        border: 1px solid white;
+        padding: 5px;
+        width: 100%;
+
+        .border-div{
+            border: 1px solid white;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+
+            .row{
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border-bottom: 1px solid gray;
+                border-right: 1px solid gray;
+
+                .col{
+                    flex: 1;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    padding: 10px 5px;
+                    height: 12vh;
+                    font-size: 1rem;
+                    font-weight: 400;
+                    width: 100%;
+
+                    &.first{
+                        border-bottom: 1px solid gray;
+                        color: #0A6FA7;
+
+                        @media screen and (max-width: 978px) {
+                            border-right: 1px solid gray;
+                        }
+
+                        @media screen and (max-width: 415px) {
+                            font-size: 1.1rem;
+                        }
+                    }
+                }
+
+                button{
+                    padding: 15px 30px;
+                    margin: 2vh 0;
+                    border-radius: 40px;
+                    background-color: #0A6FA7;
+                }
+
+                @media screen and (max-width: 978px) {
+                    flex-direction: row;
+                }
+                @media screen and (max-width: 415px) {
+                    flex-direction: column;
+                }
+            }
+
+            @media screen and (max-width: 978px) {
+                grid-template-columns: auto auto;
+            }
+
+            @media screen and (max-width: 875px) {
+                grid-template-columns: auto;
+            }
+        }
+    }
+
+    @media screen and (max-width: 551px) {
+        margin: 8vh 8vw;
+    }
+}

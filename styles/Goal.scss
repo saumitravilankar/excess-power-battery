@@ -1,0 +1,31 @@
+.goalbox{
+    margin: 10vh 10vw;
+    color: white;
+
+    .goaltitle{
+        font-size: 3rem;
+        margin-bottom: 30px;
+
+        @media screen and (max-width: 800px) {
+            font-size: 2rem;
+        }
+    }
+
+    .text{
+        font-size: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        @media screen and (max-width: 500px) {
+            font-size: 1rem;
+        }
+        
+    }
+
+    @media screen and (max-width: 500px) {
+        margin: 5vh 12vw;
+    }
+}

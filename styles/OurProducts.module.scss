@@ -1,0 +1,103 @@
+.productsbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 10vh 15vw;
+
+    .producttitle{
+        color: white;
+        font-size: 3rem;
+        text-align: start;
+        text-transform: capitalize;
+
+        @media screen and (max-width: 800px) {
+            font-size: 2rem;
+        }
+    }
+
+    .flexbox{
+        margin: 20px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        
+        .row{
+            display: flex;
+            justify-content: flex-start;
+            flex: 1;
+            gap: 5px;
+            position: relative;
+
+            .name{
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                justify-content: center;
+                align-items: center;
+                text-transform: uppercase;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                color: white;
+                font-weight: 500;
+                font-size: 1.1rem;
+                display: none;
+                text-align: center;
+            }
+
+            @media screen and (max-width: 1024px) {
+                display: block;
+            }
+        }
+
+        .col{
+            flex: 1.5;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            
+            .row{
+                cursor: pointer;
+                
+                &:hover{
+
+                    .name{
+                        display: flex;
+                    }
+                }
+            }
+
+            @media screen and (max-width: 1024px) {
+                gap: 40px;
+                margin-top: 40px;                
+            }
+        }
+        
+        .colL{
+            flex: 2.5;
+
+            @media screen and (max-width: 1024px) {
+                margin-top: 40px;                
+            }
+        }
+
+        img{
+            min-width: 100%;
+            min-height: 100%;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        @media screen and (max-width: 1024px) {
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        margin: 5vh 12vw;
+    }
+
+}
